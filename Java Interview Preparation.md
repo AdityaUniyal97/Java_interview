@@ -479,3 +479,74 @@ class C implements A, B {
 | Visibility           | Can have private, protected, and public       | Only public methods by default              |
 
 ---
+Here's the version with numbering starting from 41 and continuing as requested:
+
+---
+
+## 41. What is Polymorphism?
+**Polymorphism** means "many forms." It lets methods behave differently based on the object calling them. There are two types:
+- **Compile-time polymorphism (method overloading):** The method is chosen during compile time. Example: A class `Area` can calculate areas of squares, triangles, or circles based on parameters.
+- **Runtime polymorphism (method overriding):** The method is chosen at runtime, where a subclass method can override a parent class method.
+
+## 42. What is runtime polymorphism (dynamic method dispatch)?
+**Dynamic method dispatch** decides which overridden method to run based on the object type at runtime. This happens when a superclass reference points to a subclass object, and Java chooses which method to call based on the object type when the program runs.
+
+## 43. What is method overriding?
+**Method overriding** (runtime polymorphism) occurs when a subclass has a method with the same name, parameters, and return type as a parent class method. When called, the subclass method overrides the parent’s.
+
+```java
+class Vehicle {
+    void drive() { System.out.println("Vehicle is driving"); }
+}
+
+class Car extends Vehicle {
+    void drive() { System.out.println("Car is driving"); }
+}
+
+Vehicle vehicle = new Car();
+vehicle.drive(); // Output: Car is driving
+```
+
+## 44. What is method overloading?
+In Java, **method overloading** allows methods with the same name but different parameters to exist in a class. Known as **compile-time polymorphism** or **static polymorphism**.
+
+```java
+class MathOperations {
+    static int multiply(int a, int b) { return a * b; }
+    static int multiply(int a, int b, int c) { return a * b * c; }
+}
+
+MathOperations.multiply(4, 5);    // Output: 20
+MathOperations.multiply(2, 3, 4); // Output: 24
+```
+
+## 45. Can we override a static method?
+No, static methods belong to the class, not instances. They cannot be overridden.
+
+## 46. Can we override an overloaded method?
+Yes, overloaded methods are independent, so they can be overridden in subclasses.
+
+## 47. Can we overload the main() method?
+Yes, we can have multiple versions of the `main` method with different parameters, but only `public static void main(String[] args)` starts the program.
+
+## 48. Method Overloading vs Method Overriding
+- **Method Overloading:** Multiple methods in the same class with the same name but different parameters.
+
+```java
+class Calculator {
+    int add(int a, int b) { return a + b; }
+    int add(int a, int b, int c) { return a + b + c; }
+}
+```
+
+- **Method Overriding:** A subclass provides a specific version of a method that exists in its parent class.
+
+```java
+class Animal {
+    void sound() { System.out.println("Animal sound"); }
+}
+
+class Dog extends Animal {
+    void sound() { System.out.println("Dog barks"); }
+}
+```
