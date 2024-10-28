@@ -34,8 +34,19 @@
               "icon": "lucide-file",
               "title": "OOPS_JAVA"
             }
+          },
+          {
+            "id": "0ad2d86f9e0e4b2e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -91,7 +102,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0c15aa9518ac4a5f",
@@ -176,7 +188,7 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "84905c4854a6965c",
+  "active": "0ad2d86f9e0e4b2e",
   "lastOpenFiles": [
     "OOPS_JAVA.md",
     "Java Interview Preparation.md",
