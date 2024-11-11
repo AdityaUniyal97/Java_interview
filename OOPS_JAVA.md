@@ -8,41 +8,55 @@ Here’s an enhanced version with lines added for a polished appearance in Obsid
 
 #### 1. OOP Basics
 
-- **Object-Oriented Programming (OOP)**  
-  OOP is a programming paradigm based on objects, representing real-world entities with attributes (data) and behaviors (methods). It makes code more modular and manageable.
-
-  **---**
-
-- **Why OOP?**  
-  OOP provides a structured approach, making code understandable, maintainable, and reusable. It’s ideal for larger projects due to encapsulation and inheritance.
-
-  **---**
+Object Oriented Programming language is a way of writing code , in which we follow a structured approach so that our code become easy to maintain , execute and understand.
 
 ---
 
 #### 2. Classes and Objects
 
 - **Class**  
-  A class is a blueprint for creating objects, defining properties (data) and behaviors (methods) that each object will have.
+  A class is like a blueprint for creating an object  and a class will define the nature and the behavior of its object . We can also say that a class is also a data type having variable as object the difference between a primitive data type and a class data type is that primitive datatype are single value having no special capabilities while on other hand the class data type can have data members .  
 
   **---**
 
 - **Object**  
-  An object is an instance of a class, used to access the data and methods of the class. It represents real-world entities with specific attributes and actions.
+  An object is a instance of a class , and it is used to call the data and the members of the class , Object is also know as the real world entity
 
   **---**
 
+```
+class Student{
+int roll;
+String name;
+
+void takelevel(){
+System.out.println("On Leave");
+}
+
+void bunkClass(){
+System.out.println("Go Out And Play");
+}
+}
+
+class Main(){
+public static void Main(String Args)
+{
+Student obj = new Student();
+obj.name = "Aditya";
+System.out.println(obj.name);
+}
+}
+```
 ---
 
 #### 3. Core Features of OOP (Pillars)
 
 - **Encapsulation**  
-  Encapsulation in Java is the process of wrapping data (variables) and methods (functions) together in a single unit, like a class. It hides the internal state of the object from outside access.
-
+  Encapsulation can be defined as the wrapping up of data into a single unit  , Encapsulation is a protective shield that protect our data from being accessed to the outside world . In encapsulation we declare all the variables as private in a class and writing public method to set and get these values.
   **---**
 
 - **Abstraction**  
-  Abstraction hides complex implementation details and shows only essential features to the user, simplifying object interaction.
+ Abstraction means hiding the complex detail which are not relevant for the user and showing only those details which is suitable for them.
 
   **---**
 
@@ -52,16 +66,23 @@ Here’s an enhanced version with lines added for a polished appearance in Obsid
   **---**
 
 - **Inheritance**  
-  Inheritance allows a subclass (child class) to inherit properties and methods from a superclass (parent class), making it possible to reuse code. 
+ Inheritence is used to design the realtionship . Inheritence creates code reusablity by defining the method in parent class and extending the parent class into child class so that we can access the function 
   **---**
 
 ---
 
-#### 4. Access Specifiers
+#### 4. Access Modifiers
 
 - **Definition**  
-  Keywords like `public`, `private`, and `protected` control the visibility and accessibility of classes, methods, and variables, supporting encapsulation.
+  Keyword used in the object - oriented programming(OOPS)language to specify the accessibility of classes , methods and other members.
 
+   Private = access specifier can be accessed in the same class in which it is initialized 
+
+   Default = access specifier is not initialized with any type of specifier we can access the default access modifier within the same package.
+
+	Protected = Protected access specifier are allowed to be accessed from different package only if it is inherited
+
+   Public = access specifier can be accessed from anywhere.
   **---**
 
 ---
@@ -79,16 +100,6 @@ Here’s an enhanced version with lines added for a polished appearance in Obsid
   **---**
 
 ---
-
-#### 6. Other Programming Paradigms
-
-- **Imperative Programming**  
-  Focuses on *how* to achieve a result with a step-by-step approach.
-
-  **---**
-
-- **Declarative Programming**  
-  Focuses on *what* to achieve without detailing how, using logic-based expressions.
 
   **---**
 
@@ -186,6 +197,8 @@ Here’s an enhanced version with lines added for a polished appearance in Obsid
 
 #### 14. Abstract Class vs. Interface
 
+     
+
 - **Abstract Class**: Can have both abstract and non-abstract methods; supports single inheritance.
 
   **---**
@@ -223,18 +236,55 @@ Here’s an enhanced version with lines added for a polished appearance in Obsid
 #### 18. Constructors
 
 - **Constructor**  
-  A special method with the same name as the class, initializes objects when created.
+  Constructor is a special function get called whenever the object of a class is created , Constructor doesn't have any return type , Constructor has the same name as the class. If we don't pass the value to the constructor than in the case of primitive data type it get initialized with zero and in the case of non - primitive it get initialized with NULL. 
 
   **---**
 
 - **Types of Constructors in C++**  
   - **Default**: No parameters.
-  - **Non-Parameterized**: No arguments.
+  - **User Defined :**: Created by user itself.
   - **Parameterized**: Takes parameters.
-  - **Copy**: Initializes an object with values from another object.
 
   **---**
-
+```
+  class Student{
+    private int roll;
+    private String name;
+    private int id;
+    This is user defined Constructor
+    public Student(){
+        this.roll = 4;
+        this.name = "Aditya Uniyal";
+        this.id = 100;
+    }
+    
+    This is Default Constructor
+    public Student(){
+        this.roll = roll;
+        this.name = name;
+        this.id = id;
+    }
+    
+    // This is Parameterised Constructor
+    public Student(String name , int roll , int id)
+    {
+        this.roll = roll;
+        this.name = name;
+        this.id = id;
+    }
+    public void show()
+    {
+        System.out.println(this.name+" "+this.roll+" "+this.id);
+    }
+}
+public class Main{
+    public static void main(String agrs[])
+    {
+        Student obj = new Student("Aditya" , 4 , 100);
+        obj.show();
+    }
+}
+```
 ---
 
 #### 19. Destructor
@@ -284,3 +334,30 @@ Here’s an enhanced version with lines added for a polished appearance in Obsid
   **---**
 
 ---
+## 25.  This keyword? ##
+. This refers to the current object for which the code is being executed , Internally when compiler calls a function of an object it pass this keyword
+```
+class Student
+{
+    int x ;
+    int y;
+    Student(int x , int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+    void print()
+    {
+        System.out.println(x + " " + y);
+    }
+}
+public class B{
+    public static void main(String args[])
+    {
+        Student obj = new Student(10 , 20);
+        obj.print();
+    }
+}
+```
+
+## Method Overloading : =  occur when two or more than two methods in the same class have the same name but different parameter . It allow method to perfrom similar method to behave differently based upon the user input.
