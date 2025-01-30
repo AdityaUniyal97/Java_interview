@@ -82,7 +82,7 @@ Packages group related classes and interfaces together, making code manageable a
 ---
 
 ## 10. Data Types in Java
-
+Data Type define the type and the size of the value which a variable will store.
 ### 1. **Primitive Data Types**
 Store single values with no special capabilities:
 - **boolean**: `true` or `false`
@@ -95,7 +95,7 @@ Store single values with no special capabilities:
 - **double**: 64-bit floating point
 
 ### 2. **Non-Primitive Data Types**
-Reference variables that hold memory addresses:
+Non-primitive data types store references to memory locations, unlike primitive types which directly hold values
 - **String**
 - **Array**
 - **Class**

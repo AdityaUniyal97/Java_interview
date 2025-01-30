@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "9d24c120d4e6a4bd",
+        "id": "6969bffba8c07827",
         "type": "tabs",
         "children": [
           {
-            "id": "84905c4854a6965c",
+            "id": "db4b27b883afca25",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Java Interview Preparation.md",
+                "file": "Interview_Preparation/Java Interview Preparation.md",
                 "mode": "source",
                 "source": false
               },
@@ -22,21 +22,49 @@
             }
           },
           {
-            "id": "0ad2d86f9e0e4b2e",
+            "id": "532ea5aa58021412",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOPS_JAVA.md",
+                "file": "Interview_Preparation/Computer_Networking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OOPS_JAVA"
+              "title": "Computer_Networking"
+            }
+          },
+          {
+            "id": "5593f2b2dbd11837",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Interview_Preparation/DBMS_Interview_Questions.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "DBMS_Interview_Questions"
+            }
+          },
+          {
+            "id": "147de158dc365705",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Striver_Sheet.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Striver_Sheet"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -109,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Java Interview Preparation.md",
+                "file": "Android Mid term.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +147,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Java Interview Preparation"
+              "title": "Backlinks for Android Mid term"
             }
           },
           {
@@ -178,12 +206,44 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "0ad2d86f9e0e4b2e",
+  "active": "147de158dc365705",
   "lastOpenFiles": [
-    "Java Interview Preparation.md",
-    "OOPS_JAVA.md",
+    "Interview_Preparation/DBMS_Interview_Questions.md",
+    "Striver_Sheet.md",
+    "Interview_Preparation/Computer_Networking.md",
+    "Interview_Preparation/Java Interview Preparation.md",
+    "Interview_Preparation",
+    "Screenshot 2024-12-09 205531.png",
+    "Screenshot 2024-12-10 021943.png",
+    "Unit 1.md",
+    "unit 5.md",
+    "Project.md",
+    "Untitled 1.md",
+    "Android Practical.md",
+    "Android Mid term.md",
+    "Pasted image 20241210033555.png",
+    "Optimization",
+    "CryptoGraphy/Entire.md",
+    "Screenshot 2024-12-10 023608 1.png",
+    "Screenshot 2024-12-10 021943 1.png",
+    "MID TERM.md",
+    "Cloud/Cloud COmplete.md",
+    "Cloud/Cloud Unit 4.md",
+    "CryptoGraphy",
+    "Pasted image 20241219180928.png",
+    "Cloud",
     "Untitled",
-    "Untitled.md",
-    "Untitled 1.md"
+    "C_Sharp_Syllabus/C - sharp End Term.md",
+    "C_Sharp_Syllabus/c_sharp_prev_year.md",
+    "C_Sharp_Syllabus/C sharp Practical Stuff.md",
+    "C_Sharp_Syllabus/Unit5.md",
+    "C_Sharp_Syllabus/Unit 4.md",
+    "Fast NOTES.md",
+    "Pasted image 20241210090609.png",
+    "Pasted image 20241210033659.png",
+    "Screenshot 2024-12-10 023608.png",
+    "it.webp",
+    "C_Sharp_Syllabus",
+    "OOPS_JAVA.md"
   ]
 }
