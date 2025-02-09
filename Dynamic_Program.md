@@ -147,7 +147,7 @@ static int lcs(String s1 , String s2){
 ```
 
 # Coin Change Problem
-Recursive:
+Recursive: Time Complexity = Exponential
 ```
 static int count(int coins[] , int n , int sum){
         if(sum == 0){
@@ -163,3 +163,94 @@ static int count(int coins[] , int n , int sum){
                count(coins , n , sum - coins[n - 1]);
     }
 ```
+DP Solution
+Time Complexity = O(m * n)
+Space Complexity = O(m * n)
+```
+static long countWays(int coins[] , int n , int sum){
+        long[] table = new long[sum + 1];
+        Arrays.fill(table , 0);
+        table[0] = 1;
+        for(int i = 0 ; i < n ; i++){
+            for(int j = coins[i] ; j <= sum ; j++){
+                table[j] += table[j- coins[i]];
+            }
+        }
+        return table[sum];
+    }
+```
+
+# Edit Distance
+```
+static int eD(String s1 , String s2, int m , int n){
+        if(m == 0){
+            return n;
+        }
+        if(n == 0){
+            return m;
+        }
+        if(s1.charAt(m - 1) == s2.charAt(n - 1)){
+            return eD(s1 , s2 , m - 1, n - 1);
+        }
+        else{
+            return 1 + Math.min(eD(s1 , s2 , m , n - 1),
+                       Math.min(eD(s1, s2 , m - 1 , n),
+                                eD(s1 , s2 , m - 1, n-1)));
+        }
+    }
+```
+
+Dp Solution
+```
+static int eD(String s1, String s2, int m, int n)
+        {
+            int dp[][]= new int[m+1][n+1];
+            for(int i=0;i<=m;i++)
+            {
+                dp[i][0]=i;
+            }            
+            for(int j=0;j<=n;j++)
+            {
+                dp[0][j]=j;
+            }            
+            for(int i=1;i<=m;i++)
+            {
+                for(int j=1;j<=n;j++)
+                {
+                    if(s1.charAt(i-1)==s2.charAt(j-1))
+                    {
+                        dp[i][j]=dp[i-1][j-1];
+                    }
+                    else
+                    {
+                        dp[i][j] = 1 + Math.min(dp[i-1][j],                                            Math.min(dp[i][j-1],                                                                                                                dp[i-1][j-1]));    
+                    }
+                }
+            }
+            
+            return dp[m][n];
+        }
+```
+# Longest Increasing Subsequence
+Time Complexiyt = O(n<sup>2</sup>)
+Space Complexiyt = O(n)
+DP solution
+```
+static int LIS(int[]arr , int n){
+        int lis[] = new int[n];
+        lis[0] = 1;
+        for(int i = 1; i < n ; i++){
+            lis[i] = 1;
+            for(int j = 0 ; j < i ; j++)
+                 if(arr[i] > arr[j]){
+                    lis[i] = Math.max(lis[i] , lis[j] + 1);
+            }
+        }
+        int res = lis[0];
+        for(int i = 0 ;i < n ; i ++){
+            res = Math.max(lis[i] , res);
+        }
+        return res;
+    }
+```
+Binary Search(Onlogn) time
