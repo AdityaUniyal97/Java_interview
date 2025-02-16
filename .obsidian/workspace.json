@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dynamic_Program.md",
+                "file": "Interview_Preparation/Computer_Networking.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dynamic_Program"
+              "title": "Computer_Networking"
             }
           }
         ],
@@ -181,9 +181,9 @@
   },
   "active": "59ab7c18fececfb3",
   "lastOpenFiles": [
+    "Dynamic_Program.md",
     "Linked_list.md",
     "Hashing.md",
-    "Dynamic_Program.md",
     "Striver_Sheet.md",
     "Sorting.md",
     "Interview_Preparation/Java Interview Preparation.md",
