@@ -42,20 +42,20 @@ The **JVM (Java Virtual Machine)** is a part of the JRE, translating Java byteco
 
 ## 5. Difference Between JVM, JRE, and JDK
 
-| Component | Description |
-|-----------|-------------|
-| **JVM**   | Converts bytecode to machine code for execution. |
-| **JRE**   | Java Runtime Environment; includes libraries and JVM to run Java programs. |
+| Component | Description                                                                       |
+| --------- | --------------------------------------------------------------------------------- |
+| **JVM**   | Converts bytecode to machine code for execution.                                  |
+| **JRE**   | Java Runtime Environment; includes libraries and JVM to run Java programs.        |
 | **JDK**   | Java Development Kit; includes JRE and development tools to create Java programs. |
 
 ---
 
 ## 6. Java vs. C++
 
-| Basis       | C++                   | Java                      |
-|-------------|-----------------------|---------------------------|
-| Platform    | Platform Dependent    | Platform Independent      |
-| Application | System Programming    | Application Programming   |
+| Basis       | C++                | Java                    |
+| ----------- | ------------------ | ----------------------- |
+| Platform    | Platform Dependent | Platform Independent    |
+| Application | System Programming | Application Programming |
 
 ---
 
@@ -124,11 +124,11 @@ int numPrim = numObj.intValue();        // Unboxing
 
 ## 13. Instance vs. Local Variables
 
-| Instance Variable                       | Local Variable                    |
-|-----------------------------------------|-----------------------------------|
-| Declared outside methods.               | Declared within a method.         |
-| Has a default value.                    | No default value.                 |
-| Accessible throughout the class.        | Scope limited to the method.      |
+| Instance Variable                | Local Variable               |
+| -------------------------------- | ---------------------------- |
+| Declared outside methods.        | Declared within a method.    |
+| Has a default value.             | No default value.            |
+| Accessible throughout the class. | Scope limited to the method. |
 
 ---
 
@@ -209,7 +209,7 @@ int[][] jaggedArray = {
 
 ## 19. What are Classes in Java?
 
-A class is like a custom data type with variables and functions. Example:
+A class is like a blueprint for creating an object , A class defines what an object will contain like fields etc
 
 ```java
 class A {
@@ -232,11 +232,11 @@ class A {
 
 ## 20. Difference Between Static (Class) and Instance Methods
 
-| Static Method                | Instance Method               |
-|------------------------------|-------------------------------|
-| Belongs to the class.        | Belongs to an object.         |
-| Called using class name.     | Called using an object.       |
-| Can only access static members.| Can access both static and instance members.|
+| Static Method                   | Instance Method                              |
+| ------------------------------- | -------------------------------------------- |
+| Belongs to the class.           | Belongs to an object.                        |
+| Called using class name.        | Called using an object.                      |
+| Can only access static members. | Can access both static and instance members. |
 
 ---
 
@@ -273,7 +273,13 @@ An **object** is an instance of a class, representing real-world entities with p
 
 ## 24. What is a Constructor?
 
-A constructor initializes an object of a class:
+A constructor is a special method that is automatically called whenever the object of the class is created.
+Constructor doesn't have any return type
+Constructor have the same name as the class name
+**Types of Constructor in Java**
+- Default Constructor = No parameters , java automatically returns the default value like in case of primitive data type it is 0 and for Non-Primitive Data type it is Null
+- Parametrized Constructor = Here values are passed as a arguments
+- Copy Constructor = Used to copy data from one object to another . Java doesnt give Copy Constructor as a default constructor unlike in C++
 
 ```java
 class Point {
@@ -290,23 +296,15 @@ class Point {
 ### 24. What is the purpose of a default constructor?
 A default constructor in Java is used to create objects with default values. It’s a type of constructor that doesn’t take any parameters, meaning it automatically assigns default values to the object's properties.
 
-**Key Points:**
-- Creates an object with default values.
-- Called automatically when an object is initialized without specific arguments.
-
 ---
 
 ### 25. What is a copy constructor in Java?
-A copy constructor is used to create a new object by copying the values of another object. This is useful when you want a duplicate of an existing object with the same property values.
-
-**Key Points:**
-- Takes another object as a parameter.
-- Copies values from one object to create a similar new one.
+A copy constructor is used to create a new object by copying the values of another object.
 
 ---
 
 ### 26. Where and how can you use a private constructor?
-A private constructor is used when you want to restrict the creation of objects from outside the class. This is useful in cases like Singleton patterns, where only one instance of a class should exist.
+A private constructor is used when you want to restrict the creation of objects from outside the class. This is useful in Privacy.
 
 **Example:**
 ```java
@@ -328,12 +326,12 @@ class Singleton {
 ---
 
 ### 27. Differences between constructors and methods:
-| Feature              | Constructor                                | Method                                      |
-|----------------------|--------------------------------------------|---------------------------------------------|
-| Purpose              | Initializes an object                      | Performs specific actions                   |
-| Return Type          | No return type                             | Has a return type                           |
-| Call Frequency       | Called only once during object creation    | Can be called multiple times                |
-| Usage                | Sets up initial state of an object         | Used for performing actions on the object   |
+| Feature        | Constructor                             | Method                                    |
+| -------------- | --------------------------------------- | ----------------------------------------- |
+| Purpose        | Initializes an object                   | Performs specific actions                 |
+| Return Type    | No return type                          | Has a return type                         |
+| Call Frequency | Called only once during object creation | Can be called multiple times              |
+| Usage          | Sets up initial state of an object      | Used for performing actions on the object |
 
 ---
 
@@ -379,13 +377,13 @@ class Circle implements Shape {
 ---
 
 ### 31. Differences between abstract class and interface:
-| Feature              | Abstract Class                                | Interface                                   |
-|----------------------|-----------------------------------------------|---------------------------------------------|
-| Methods              | Can have both abstract and concrete methods   | Only abstract methods (Java 8+ allows default methods) |
-| Final Methods        | Can have final methods                        | No final methods                            |
-| Inheritance          | Single inheritance                            | Multiple inheritance                        |
-| Declaration Keyword  | `abstract`                                    | `interface`                                 |
-| Visibility           | Can have private, protected, and public       | Only public methods by default              |
+| Feature             | Abstract Class                              | Interface                                              |
+| ------------------- | ------------------------------------------- | ------------------------------------------------------ |
+| Methods             | Can have both abstract and concrete methods | Only abstract methods (Java 8+ allows default methods) |
+| Final Methods       | Can have final methods                      | No final methods                                       |
+| Inheritance         | Single inheritance                          | Multiple inheritance                                   |
+| Declaration Keyword | `abstract`                                  | `interface`                                            |
+| Visibility          | Can have private, protected, and public     | Only public methods by default                         |
 
 ---
 
@@ -444,7 +442,7 @@ Inheritance allows a subclass (child class) to inherit properties and methods fr
 1. **Single Inheritance**: One subclass inherits from one superclass.
 2. **Multilevel Inheritance**: A subclass is inherited by another subclass, creating a hierarchy.
 3. **Hierarchical Inheritance**: One superclass is inherited by multiple subclasses.
-4. **Multiple Inheritance (Interfaces only)**: A class can implement multiple interfaces.
+4. **Multiple Inheritance (Interfaces only)**: A subclass can inherits the properties of multiple superclass
 
 ---
 
@@ -468,15 +466,18 @@ class C implements A, B {
 
 ---
 
-### 40. Differences between abstract class and interface:
+### 40. What is Abstraction
+Abstraction means hiding the implementation details and showing only the essential features to the user.
+**In Java Abstraction is achieved through**
 
-| Feature              | Abstract Class                                | Interface                                   |
-|----------------------|-----------------------------------------------|---------------------------------------------|
-| Methods              | Can have both abstract and concrete methods   | Only abstract methods (Java 8+ allows default methods) |
-| Final Methods        | Can have final methods                        | No final methods                            |
-| Inheritance          | Single inheritance                            | Multiple inheritance                        |
-| Declaration Keyword  | `abstract`                                    | `interface`                                 |
-| Visibility           | Can have private, protected, and public       | Only public methods by default              |
+| Feature             | Abstract Class                              | Interface                                              |
+| ------------------- | ------------------------------------------- | ------------------------------------------------------ |
+| Methods             | Can have both abstract and concrete methods | Only abstract methods (Java 8+ allows default methods) |
+| Final Methods       | Can have final methods                      | No final methods                                       |
+| Inheritance         | Single inheritance                          | Multiple inheritance                                   |
+| Declaration Keyword | `abstract`                                  | `interface`                                            |
+| Visibility          | Can have private, protected, and public     | Only public methods by default                         |
+|                     |                                             |                                                        |
 
 ---
 Here's the version with numbering starting from 41 and continuing as requested:
@@ -485,14 +486,13 @@ Here's the version with numbering starting from 41 and continuing as requested:
 
 ## 41. What is Polymorphism?
 **Polymorphism** means "many forms." It lets methods behave differently based on the object calling them. There are two types:
-- **Compile-time polymorphism (method overloading):** The method is chosen during compile time. Example: A class `Area` can calculate areas of squares, triangles, or circles based on parameters.
-- **Runtime polymorphism (method overriding):** The method is chosen at runtime, where a subclass method can override a parent class method.
+- **Compile-time polymorphism (method overloading):** The method is chosen during compile time. 
+- **Runtime polymorphism (method overriding):** The method is chosen at runtime
 
 ## 42. What is runtime polymorphism (dynamic method dispatch)?
-**Dynamic method dispatch** decides which overridden method to run based on the object type at runtime. This happens when a superclass reference points to a subclass object, and Java chooses which method to call based on the object type when the program runs.
-
+**Dynamic method dispatch** decides which overridden method to run based on the object type at runtime. 
 ## 43. What is method overriding?
-**Method overriding** (runtime polymorphism) occurs when a subclass has a method with the same name, parameters, and return type as a parent class method. When called, the subclass method overrides the parent’s.
+**Method overriding** (runtime polymorphism) occurs when a subclass has a method with the same name, parameters, and return type as a parent class method. 
 
 ```java
 class Vehicle {
@@ -508,7 +508,7 @@ vehicle.drive(); // Output: Car is driving
 ```
 
 ## 44. What is method overloading?
-In Java, **method overloading** allows methods with the same name but different parameters to exist in a class. Known as **compile-time polymorphism** or **static polymorphism**.
+In Java, **method overloading** allows methods with the same name but different parameters to exist in a class. .
 
 ```java
 class MathOperations {
