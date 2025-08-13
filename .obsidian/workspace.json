@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "College_stuuf/COmputer graphics.md",
+                "file": "Operating System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "COmputer graphics"
+              "title": "Operating System"
             }
           }
         ],
@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0c15aa9518ac4a5f",
@@ -180,8 +181,14 @@
   },
   "active": "01d6d590aab91658",
   "lastOpenFiles": [
-    "College_stuuf/Computer_Network & cyber.md",
+    "DBMS.md",
+    "Interview_Preparation/Java Interview Preparation.md",
+    "Interview_Preparation/Interview Prep.md",
+    "Interview_Preparation/DBMS_Interview_Questions.md",
+    "Interview_Preparation/Computer_Networking.md",
+    "Networking.md",
     "College_stuuf/COmputer graphics.md",
+    "College_stuuf/Computer_Network & cyber.md",
     "DSA/1 Mathametics Normal.md",
     "DSA/TREE.md",
     "DSA/System Design.md",
@@ -189,12 +196,7 @@
     "DSA/Searching.md",
     "DSA/3 Recursion.md",
     "DSA/2 Array.md",
-    "DBMS.md",
-    "Networking.md",
-    "Interview_Preparation/Computer_Networking.md",
-    "Interview_Preparation/Interview Prep.md",
-    "Interview_Preparation/DBMS_Interview_Questions.md",
-    "OOPS.md",
+    "Operating System.md",
     "Striver_Sheet.md",
     "Pasted image 20250619165829.png",
     "Pasted image 20250319162628.png",
@@ -202,7 +204,6 @@
     "Linked_list.md",
     "Dynamic_Program.md",
     "Hashing.md",
-    "Interview_Preparation/Java Interview Preparation.md",
     "DSA/4 Binary Search.md",
     "DSA",
     "College_stuuf/AI.md",
