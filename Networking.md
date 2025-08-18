@@ -151,3 +151,14 @@ It is a cables that transmit the data as light pulses through glass or plastic f
 **Types**
 - **Single-Mode Fiber** Transmit a signle light wave, good for long dsitance communication
 - **Multi-Mode Fiber** Transmit multiple waves & offer cost effective
+
+## Network Devices
+**Router** is a networking device that connects multiple networks together and routes the data packets between them using IP address
+- Router finds the best path for data transmission
+- Connects the local netwrok to internet
+
+**Switch** is used to connect multiple devices within the same network and transfer the data to the reciver using his MAC address
+
+**Hub** is a basic networkign device that broadcast the data to all the connected devices.
+
+**Repeater** applies and regenerate the data signa; to extend its range
