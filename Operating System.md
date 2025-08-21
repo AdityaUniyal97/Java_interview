@@ -11,7 +11,9 @@
 - Process is an instance of a program which is in execution
 - It is not just a code , but also include the program's current activity , state , memory layout . allocated resocurces and the data which is needed during the excution
 - Whenever a program is launched the OS loads the neccessary code into the moemory and creates a process and  assign resources and begin its execution 
-
+  <u>States of a Process</u>
+- New->Ready -> might wait(I/O) ->Terminates
+             -> Running
 **Program**
 - Porgram is a set of intstruction written in specific programming language that tells a computer what to do.
 - Program is nothing but just a code which is stored in the disk  and it becomes active when it get executed by the OS , turning program into process
@@ -39,9 +41,8 @@
 - Once complete the output is returned to the user
 
 **2. Time Sharing / Multitasking OS**
-- Multiple users can use the CPU simulataneously by shring the time
-- Ex: Window , lInux
-- Here the Fast CPU switching creates the illusion of simulaneus exuctuion
+- Multi-tasking operating system enables multiple task to run simulataneously on a single CPU by rapidly switching between them.
+- Here the Fast CPU switching creates the illusion of simultaneus exuctuion
 **3 Distributed Operating System**
 - Manage multiple computers and make them appear as a one system
 - Ex: Google distibuted system
@@ -50,4 +51,5 @@
 - Multi pupose OS is designed to support multiple task for multiple users at the same time
 - can do different tpes of tasks at the same times
 - Support multiple users using the system simulataneusly
-
+**5 Mutliprocessing o/s**
+- Multiprocessing o/s system is the one that support the use of two or more processor(CPUs) within  a single computer system, allowing the tasks to be executed simultaneously

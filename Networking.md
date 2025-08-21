@@ -142,7 +142,8 @@ TCP/IP Model is a practical framework that tells how the devices will communicat
 Network cabeling is the physical infrastructure that connects devices to a network , allowing them to share data and communicate. 
 
 **Twisted Pair Cable** 
-Is a type of cable used for network and telephone communication that consist of two or moe pairs of insulated copper wire twisted together **Types**
+Is a type of cable used for network and telephone communication that consist of two or moe pairs of insulated copper wire twisted together 
+**Types**
 - **Unshielded Twisted Pair(UTP)** Most common and used in LAN(Local Area Network)
 - **Shieleded Twisted Pair(STP)** Equiped with protective shild to minimize the external interference  
 
@@ -161,4 +162,33 @@ It is a cables that transmit the data as light pulses through glass or plastic f
 
 **Hub** is a basic networkign device that broadcast the data to all the connected devices.
 
-**Repeater** applies and regenerate the data signa; to extend its range
+**Repeater** applifies and regenerate the data signals  to extend its range
+
+**Bridge** is a networking device that is used to connect multiple LAN and filter the network traffic
+
+## Ethernet Frame Structure
+An Ethernet frame is the basic unit of the data transmission in Ehternet network . It carries the data between the devices in a structure format to ensure accurate data delivery.
+**Components of Ethernet Frame**
+- **Preamble** synchronizes the sender and reciever
+- **Destination MAC Adress** Reciever device address
+- **Source MAC Address** Senders device address
+- **TYpe/length** defines the data type or size
+- **Payload** The actual data which is being transmitted
+- **Fram check Synchronization** Verify the user identity
+
+## Address Resolution Protocol(ARP)
+- ARP is one of the most important protocol of the Data Link Layer in the OSI model
+- ARP is responsible for finding the MAC address of host from a known IP address
+ **How ARP works**
+- **ARP  Request** : here the ARP finds the MAC address throught the given ip
+- **ARP Reply** THe device with the matching IP address reponds with the MAC address
+- **Caching** = ARP stores the MAC address for future use
+- **ARP Cache TimeOut** = Time for which the MAC address reside in the ARP chache
+
+## Network Access Control(NAC)
+- NAC is a process that limits the unauthorized user from accessing the network
+- NAC is also known as the network addmisssion control
+**How it Works**
+- **Authentication** = It verifies the user/device
+- **Auhtorization** = It allow or deny the user from accessing the resources based on the defined policies
+- **Continues Monitorig** = It keeps monitoring
