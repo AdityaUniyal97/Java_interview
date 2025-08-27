@@ -4,35 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "2218962e1f0c26ab",
+        "id": "e19a52b7afcc5db8",
         "type": "tabs",
         "children": [
           {
-            "id": "1f7f1fc3ab683394",
+            "id": "309ccb9b04a5f21b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OOPS.md",
+                "file": "College_stuuf/COLLEGE_OS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OOPS"
+              "title": "COLLEGE_OS"
             }
           },
           {
-            "id": "01b7ee9d31aba753",
+            "id": "06870f0aa28e3006",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DBMS.md",
+                "file": "Operating System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DBMS"
+              "title": "Operating System"
             }
           }
         ]
@@ -179,23 +179,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1f7f1fc3ab683394",
+  "active": "309ccb9b04a5f21b",
   "lastOpenFiles": [
-    "DBMS.md",
     "Operating System.md",
-    "OOPS.md",
+    "College_stuuf/COLLEGE_OS.md",
+    "College_stuuf/AI.md",
+    "College_stuuf/Computer_Network & cyber.md",
+    "DBMS.md",
     "Networking.md",
+    "LEFT-OVER.md",
     "Untitled 1.base",
+    "DSA/System Design.md",
     "Untitled.base",
+    "Interview_Preparation/Computer_Networking.md",
     "Interview_Preparation/Interview Prep.md",
+    "OOPS.md",
     "Interview_Preparation/Java Interview Preparation.md",
     "Interview_Preparation/DBMS_Interview_Questions.md",
-    "Interview_Preparation/Computer_Networking.md",
-    "College_stuuf/COmputer graphics.md",
-    "College_stuuf/Computer_Network & cyber.md",
     "DSA/1 Mathametics Normal.md",
     "DSA/TREE.md",
-    "DSA/System Design.md",
     "DSA/Sorting.md",
     "DSA/Searching.md",
     "DSA/3 Recursion.md",
@@ -209,8 +211,6 @@
     "Hashing.md",
     "DSA/4 Binary Search.md",
     "DSA",
-    "College_stuuf/AI.md",
-    "python_basics/python_basics.md",
     "python_basics",
     "College_stuuf",
     "Untitled 1",
