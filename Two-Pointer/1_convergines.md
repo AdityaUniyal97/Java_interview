@@ -64,7 +64,36 @@ arr = [1,2,3,4,5]
 target = 6
 ## 📤 Output
 6
+```
+import java.util.*;
 
+class Solution {
+    public static int countPairs(int[] arr, int target) {
+        Arrays.sort(arr); // just in case
+        int left = 0;
+        int right = arr.length - 1;
+        int count = 0;
+
+        while (left < right) {
+            if (arr[left] + arr[right] <= target) {
+                count += (right - left);
+                left++;
+            } else {
+                right--;
+            }
+        }
+
+        return count;
+    }
+
+    public static void main(String[] args) {
+        int[] arr = {1,2,3,4,5};
+        int target = 6;
+
+        System.out.println(countPairs(arr, target)); // 6
+    }
+}
+```
 # Q5  Problem: Count pairs **< target**
 ## 🧾 Input
 arr = [2,3,4,6,9]  
@@ -175,4 +204,73 @@ class Solution {
 - Return true or false
 
 # Q10 Four Sum
+```
+class Solution {
+    public List<List<Integer>> fourSum(int[] nums, int target) {
+        List<List<Integer>> ans = new ArrayList<>();
+        Arrays.sort(nums);
+        int n = nums.length;
+        for(int i = 0 ; i < n - 3 ; i++){
+            if(i > 0 && nums[i] == nums[i - 1]){
+                continue;
+            }
+            for(int j = i + 1 ; j < n - 2 ; j++){
+                if(j > i + 1 && nums[j] == nums[j - 1]){
+                    continue;
+                }
+                int low = j + 1;
+                int right = nums.length - 1;
+                while(low < right){
+                    long sum = (long)nums[i]+nums[j]+nums[low]+nums[right];
+                    if(sum==target){
+                        ans.add(Arrays.asList(nums[i],nums[j],nums[low],nums[right]));
+                        while(low < right && nums[low] == nums[low + 1]){
+                            low++;
+                        }
+                        while(low < right && nums[right] == nums[right - 1]){
+                            right--;
+                        }
+                        low++;
+                        right--;
+                    }
+                    else if(sum < target){
+                        low++;
+                    }
+                    else{
+                        right--;
+                    }
+                }
+            }
+        }
+        return ans;
+    }
+}
+```
 
+
+# 3 SUM closest
+```
+class Solution {
+    public int threeSumClosest(int[] nums, int target) {
+        Arrays.sort(nums);
+        int close = nums[0] + nums[1] + nums[2];
+        for(int i = 0 ; i < nums.length - 2; i++){
+            int left = i + 1;
+            int right = nums.length - 1;
+            while(left < right){
+                int sum = nums[i] + nums[left] + nums[right];
+                if(Math.abs(sum-target) < Math.abs(target-close)){
+                    close = sum;
+                }
+                if(sum < target){
+                    left++;
+                }
+                else{
+                    right--;
+                }
+            }
+        }
+        return close;
+    }
+}
+```
