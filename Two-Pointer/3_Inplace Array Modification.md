@@ -120,3 +120,93 @@ class Solution {
     }
 }
 ```
+
+
+## Find the Intersecton between two arrays
+```
+class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
+        Set<Integer> set = new HashSet<>();
+        Set<Integer> res = new HashSet<>();
+        for(int n : nums1){
+            set.add(n);
+        }
+        for(int n : nums2){
+            if(set.contains(n)){
+                res.add(n);
+            }
+        }
+        int ans[] = new int[res.size()];
+        int i = 0;
+        for(int n : res){
+            ans[i] = n;
+            i++;
+        }
+        return ans;
+    }
+}
+```
+
+## Minimum steps to swap black and white ball 
+```
+class Solution {
+    public long minimumSteps(String s) {
+        int slow = 0;
+        long steps = 0;
+        for(int right = 0 ; right < s.length() ;right++){
+            if(s.charAt(right) == '0'){
+                steps += (right - slow);
+                slow++;
+            }
+        }
+        return steps;
+    }
+}
+```
+
+## Remove Dupplicate from sorted Array (only 2 allowed)
+```
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int slow = 0;
+        for(int fast = 0 ; fast < nums.length ; fast++){
+            if(slow < 2 || nums[fast] != nums[slow - 2]){
+                nums[slow] = nums[fast];
+                slow++;
+            }
+        }
+        return slow;
+    }
+}
+```
+
+## Sort Colors
+```
+class Solution {
+    public void sortColors(int[] nums) {
+        int i = 0;
+        int j = nums.length - 1;
+        int k = 0;
+        while(k <= j){
+            if(nums[k] == 0){
+                swap(nums,i,k);
+                i++;
+                k++;
+            }
+            else if(nums[k] == 1){
+                k++;
+            }
+            else{
+                swap(nums,j,k);
+                j--;
+            }
+        }
+    }
+
+    private void swap(int nums[] , int a , int b){
+        int temp = nums[a]; 
+        nums[a] = nums[b];
+        nums[b] = temp;
+    }
+}
+```
