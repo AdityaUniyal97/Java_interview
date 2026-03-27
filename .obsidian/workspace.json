@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Matrix/1_ Plus One.md",
+                "file": "DP/1_Fibonacci/Fibonacci.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_ Plus One"
+              "title": "Fibonacci"
             }
           },
           {
@@ -215,15 +215,20 @@
   },
   "active": "3dd221c6379c7c14",
   "lastOpenFiles": [
-    "Matrix/Matrix.md",
-    "Matrix/1_ Plus One.md",
+    "A/Matrix/1_ Plus One.md",
+    "DP/1_Fibonacci/Fibonacci.md",
+    "DP/1_Fibonacci",
+    "DP/Untitled.md",
+    "DP",
+    "A/Matrix/Matrix.md",
+    "A",
     "tree.md",
     "Sliding window.md",
     "Kdanes-Algo.md",
     "hci.md",
-    "Two-Pointer/4_ Fast & Slow.md",
-    "Two-Pointer/1_convergines.md",
-    "Two-Pointer/3_Inplace Array Modification.md",
-    "Two-Pointer/2 String_Reversal.md"
+    "A/Two-Pointer/4_ Fast & Slow.md",
+    "A/Two-Pointer/1_convergines.md",
+    "A/Two-Pointer/3_Inplace Array Modification.md",
+    "A/Two-Pointer/2 String_Reversal.md"
   ]
 }
