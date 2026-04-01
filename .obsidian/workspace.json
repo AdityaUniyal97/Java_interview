@@ -13,12 +13,68 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "A/Two-Pointer/4_ Fast & Slow.md",
+                "file": "Matrix/3_In_Place_rotation.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4_ Fast & Slow"
+              "title": "3_In_Place_rotation"
+            }
+          },
+          {
+            "id": "b931ca9a7dfffb2c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Matrix/4_Spiral Matrix.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "4_Spiral Matrix"
+            }
+          },
+          {
+            "id": "226f2132ce2b7398",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Matrix/5_Set_Matrix Zero.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "5_Set_Matrix Zero"
+            }
+          },
+          {
+            "id": "dd6a0bdac8407f7d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CP/Introductory.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Introductory"
+            }
+          },
+          {
+            "id": "71f0b67b7f04013e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linked-List/LL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "LL"
             }
           },
           {
@@ -49,7 +105,8 @@
               "title": "Sliding window"
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -123,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "String.md",
+                "file": "CP/Introductory.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +190,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for String"
+              "title": "Backlinks for Introductory"
             }
           },
           {
@@ -212,20 +269,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "051854ad2761741d",
+  "active": "71f0b67b7f04013e",
   "lastOpenFiles": [
-    "A/Two-Pointer/3_Inplace Array Modification.md",
-    "Sliding window.md",
-    "A/Two-Pointer/4_ Fast & Slow.md",
-    "A/Matrix/3_In_Place_rotation.md",
-    "A/Matrix/2_Merge Sorted Array.md",
-    "7,4,1],[8,5,2],[9,6,3.md",
-    "A/Matrix/1_ Plus One.md",
+    "CP/Introductory.md",
+    "Linked-List/LL.md",
+    "Linked-List",
+    "Matrix/7_Hashing _ Frequenxy.md",
+    "CP",
+    "Matrix/6_Product except itself.md",
+    "Matrix/0_Matrix.md",
     "Kdanes-Algo.md",
+    "Sliding window.md",
+    "7,4,1],[8,5,2],[9,6,3.md",
+    "Matrix/5_Set_Matrix Zero.md",
+    "Matrix/4_Spiral Matrix.md",
+    "Matrix/2_Merge Sorted Array.md",
+    "Matrix/1_ Plus One.md",
+    "Matrix/3_In_Place_rotation.md",
     "DP/1_Fibonacci/Fibonacci.md",
-    "A/Two-Pointer/2 String_Reversal.md",
-    "A/Two-Pointer/1_convergines.md",
-    "A/Matrix/Matrix.md",
+    "Two-Pointer/4_ Fast & Slow.md",
+    "Two-Pointer/3_Inplace Array Modification.md",
+    "Two-Pointer/2 String_Reversal.md",
+    "Two-Pointer/1_convergines.md",
     "DP/1_Fibonacci",
     "DP/Untitled.md",
     "DP",

@@ -223,7 +223,7 @@ class Solution {
                 while(low < right){
                     long sum = (long)nums[i]+nums[j]+nums[low]+nums[right];
                     if(sum==target){
-                        ans.add(Arrays.asList(nums[i],nums[j],nums[low],nums[right]));
+                    ans.add(Arrays.asList(nums[i],nums[j],nums[low],nums[right]));
                         while(low < right && nums[low] == nums[low + 1]){
                             low++;
                         }
