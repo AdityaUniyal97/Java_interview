@@ -1,26 +1,25 @@
 ## Fibonacci 
 ```
-import java.util.*;
 class A{
-    public static int fib(int dp[] , int n){
-        if(n == 0){
-            return 0;
-        }
+    public static int fib(int n){
         if(n == 1){
             return 1;
         }
-        if(dp[n] != -1){
-            return dp[n];
+        if(n == 2){
+            return 2;
         }
-        dp[n] = fib(dp,n-1) + fib(dp,n - 2);
-        return dp[n];
+        int prev2 = 2;
+        int prev1 = 1;
+        for(int i = 3 ; i <= n ; i++){
+            int curr = prev2 + prev1;
+            prev2 = prev1;
+            prev1 = curr;
+        }
+        return prev1;
     }
-    
-    public static void main(String args[]){
-        int n = 4;
-        int dp[] = new int[n + 1];
-        Arrays.fill(dp,-1);
-        System.out.println(fib(dp,n));
+    public static void main(String agrs[]){
+        int n = 3;
+        System.out.println(fib(n));
     }
 }
 ```
@@ -53,55 +52,71 @@ class A{
 cost = [10, 15, 20]
 Answer = 15
 ```
-import java.util.*;
 class A{
-    public static int reduce(int arr[] , int n , int dp[]){
-        if(n <= 1){
-            return 0;
-        }
-        if(dp[n] != -1){
-            return dp[n];
-        }
-        dp[n] = Math.min(
-            arr[n-1] + reduce(arr , n - 1, dp), 
-            arr[n- 2] + reduce(arr , n - 2, dp)
-        );
-        return dp[n];
+    public static void main(String agrs[]){
+        int cost[] = {10,30,20};
+        System.out.println(minCost(cost));
     }
-    public static void main(String args[]){
-        int arr[] = {10,15,12};
-        int n = arr.length;
-        int dp[] = new int[n + 1];
-        Arrays.fill(dp,-1);
-        System.out.println(reduce(arr,n,dp));
+    
+    public static int minCost(int cost[]){
+        int n = cost.length;
+        if(n == 1){
+            return cost[0];
+        }
+        int prev2 = cost[0];
+        int prev1 = cost[1];
+        for(int i = 3 ; i < n ; i++){
+            int curr = cost[i] + Math.min(prev2 , prev1);
+            prev2 = prev1;
+            prev1 = curr;
+        }
+        return Math.min(prev2 , prev1);
     }
 }
 ```
 
 ## House Robber (Adacent House Not Allowed)
 ```
-class Solution {
-    public int rob(int[] nums) {
-        int n = nums.length;
-        int dp[] = new int[n + 1];
-        Arrays.fill(dp,-1);
-        return solve(nums,n,dp);
-    }
-
-    public int solve(int[] nums, int n , int[] dp){
-        if(n == 0){
-            return 0;
-        }
+class A{
+    public static int fib(int arr[]){
+        int n = arr.length;
         if(n == 1){
-            return nums[0];
+            return arr[0];
         }
-        if(dp[n] != -1){
-            return dp[n];
+        int prev2 = arr[0];
+        int prev1 = Math.max(arr[0],arr[1]);
+        for(int i = 2 ; i < n ; i++){
+            int curr = Math.max(arr[i]+prev2,prev1);
+            prev2 = prev1;
+            prev1 = curr;
         }
-        dp[n] =  Math.max(nums[n-1]+solve(nums,n-2,dp),
-                        solve(nums,n-1,dp)
-        );
-        return dp[n];
+        return prev1;
+    }
+    public static void main(String agrs[]){
+        int[] arr = {2,7,9,3,1};
+        System.out.println(fib(arr));
+    }
+}
+```
+
+## Pascal traingle
+```
+class Solution {
+    public List<List<Integer>> generate(int numRows) {
+        List<List<Integer>> result = new ArrayList<>();
+        for(int i = 0 ; i < numRows; i++){
+            List<Integer> row = new ArrayList<>();
+            for(int j = 0 ; j <= i ; j++){
+                if(j == 0 || j == i){
+                    row.add(1);
+                }
+                else{
+                    row.add(result.get(i-1).get(j-1) + result.get(i - 1).get(j));
+                }
+            }
+            result.add(row); 
+        }
+        return result;
     }
 }
 ```

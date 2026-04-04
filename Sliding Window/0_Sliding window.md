@@ -262,3 +262,31 @@ class Solution {
     }
 }
 ```
+
+## Max Points you can obtain from the Cards 
+Input : cardScore = [1, 2, 3, 4, 5, 6] , k = 3
+Output : 15
+Explanation : Choosing the rightmost cards will maximize your total score. So optimal cards chosen are the rightmost three cards 4 , 5 , 6.
+Th score is 4 + 5 + 6 => 15.
+
+```
+class Solution {
+    public int maxScore(int[] cardScore, int k) {
+        int n = cardScore.length;
+        int sum = 0;
+        for(int i = 0 ; i < k ; i++){
+            sum += cardScore[i];
+        }
+        int ans = sum;
+        int right = cardScore.length - 1;
+        //remove left and add right one 
+        for(int i = k - 1; i >= 0 ; i--){
+            sum -= cardScore[i];
+            sum += cardScore[right];
+            right--;
+            ans = Math.max(ans , sum);
+        }
+        return ans;
+    }
+}
+```
