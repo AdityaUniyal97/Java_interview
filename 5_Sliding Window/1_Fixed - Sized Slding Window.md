@@ -8,7 +8,6 @@ class Solution {
         }
         int ans = sum;
         int right = cardScore.length - 1;
-        //remove left and add right one 
         for(int i = k - 1; i >= 0 ; i--){
             sum -= cardScore[i];
             sum += cardScore[right];

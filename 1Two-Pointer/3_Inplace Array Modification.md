@@ -1,4 +1,3 @@
--
 
 ## Remove Dupplicates from the Array 
 ```
