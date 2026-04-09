@@ -238,3 +238,32 @@ public boolean isSymmetric(TreeNode root) {
         curr.right = temp;
     }
 ```
+
+## Smallest String Starting from Leaf
+**DFS karo, char ko front me add karo, leaf pe string compare karo, smallest update karo**
+
+```
+class Solution {
+    String ans = "~";
+    public String smallestFromLeaf(TreeNode root) {
+        dfs(root,"");
+        return ans;
+    }
+
+    public void dfs(TreeNode node , String curr){
+        if(node == null){
+            return;
+        }
+        char ch = (char)(node.val + 'a');
+        curr = ch + curr;
+        if(node.left == null && node.right == null){
+            if(curr.compareTo(ans) < 0){
+                ans = curr;
+            }
+        }
+        dfs(node.left,curr);
+        dfs(node.right,curr);
+    }
+}
+```
+
