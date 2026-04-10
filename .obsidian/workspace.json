@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System_Design/2_Principles of System Desing.md",
+                "file": "Graph/DFS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2_Principles of System Desing"
+              "title": "DFS"
             }
           }
         ]
@@ -186,18 +186,18 @@
   },
   "active": "541f6e3e32dbaf64",
   "lastOpenFiles": [
-    "System_Design/1 Introduction.md",
-    "System_Design/2_Principles of System Desing.md",
+    "1Two-Pointer/1_convergines.md",
     "6_Tree/B Recursive Inorder.md",
-    "System_Design",
     "6_Tree/a_ Recursive Preorder.md",
+    "System_Design/2_Principles of System Desing.md",
+    "System_Design/1 Introduction.md",
+    "System_Design",
     "Kdanes-Algo.md",
     "2_HashMaps/problems.md",
     "1Two-Pointer/4_ Fast & Slow.md",
     "1Two-Pointer/3_Inplace Array Modification.md",
     "1Two-Pointer/2 String_Reversal.md",
-    "1Two-Pointer/1_convergines.md",
-    "Graph/graph.md",
+    "Graph/DFS.md",
     "DP/1D/1D.md",
     "DP/1_Fibonacci/Fibonacci.md",
     "Graph",
