@@ -76,3 +76,43 @@ class Solution {
     }
 }
 ```
+
+## Reverse the word and character in the word 
+```
+import java.util.*;
+class A{
+    public static void main(String agrs[]){
+        String s = "hello world";
+        System.out.println(solve(s));
+    }
+    public static String reverse(String s){
+        char[] ch = s.toCharArray();
+        int low = 0;
+        int right = ch.length - 1;
+        while(low < right){
+            char temp = ch[low];
+            ch[low] = ch[right];
+            ch[right] = temp;
+            low++;
+            right--;
+        }
+        return new String(ch);
+    }
+    public static String solve(String s){
+        String word[] = s.trim().split("\\s+");
+        int low = 0;
+        int right = word.length - 1;
+        while(low < right){
+            String temp = word[low];
+            word[low] = word[right];
+            word[right] = temp;
+            low++;
+            right--;
+        }
+        for(int i = 0 ; i < word.length ; i++){
+            word[i] = reverse(word[i]);
+        }
+        return String.join(" ",word);
+    }
+}
+```

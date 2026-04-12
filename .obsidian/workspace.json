@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph/DFS.md",
+                "file": "1Two-Pointer/3_Inplace Array Modification.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "DFS"
+              "title": "3_Inplace Array Modification"
             }
           }
         ]
@@ -186,7 +186,10 @@
   },
   "active": "541f6e3e32dbaf64",
   "lastOpenFiles": [
+    "1Two-Pointer/2 String_Reversal.md",
     "1Two-Pointer/1_convergines.md",
+    "Graph/Graph Data Structure.md",
+    "Graph/DFS.md",
     "6_Tree/B Recursive Inorder.md",
     "6_Tree/a_ Recursive Preorder.md",
     "System_Design/2_Principles of System Desing.md",
@@ -196,8 +199,6 @@
     "2_HashMaps/problems.md",
     "1Two-Pointer/4_ Fast & Slow.md",
     "1Two-Pointer/3_Inplace Array Modification.md",
-    "1Two-Pointer/2 String_Reversal.md",
-    "Graph/DFS.md",
     "DP/1D/1D.md",
     "DP/1_Fibonacci/Fibonacci.md",
     "Graph",
@@ -219,7 +220,6 @@
     "7,4,1],[8,5,2],[9,6,3.md",
     "3_Matrix/5_Set_Matrix Zero.md",
     "3_Matrix/4_Spiral Matrix.md",
-    "3_Matrix/2_Merge Sorted Array.md",
     "DP/1_Fibonacci",
     "DP"
   ]
