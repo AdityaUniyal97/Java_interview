@@ -114,3 +114,98 @@ class Solution {
 }
 ```
 
+## Two Sum
+```
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer,Integer> map = new HashMap<>();
+        for(int i = 0 ; i < nums.length() ; i++){
+            int sum = target - nums[i];
+            if(map.containsKey(sum)){
+                return new int[]{map.get(sum),i};
+            }
+            map.put(nums[i],i);
+        }
+        return new int[]{-1,-1};
+    }
+}
+```
+
+## Missing Number in an array
+```
+class Solution {
+    public int missingNumber(int[] nums) {
+        int n = nums.length;
+        int sum = 0;
+        for(int num : nums){
+            sum += num;
+        }
+        int total = 0;
+        for(int i = 0 ; i <= n ; i++){
+            total += i;
+        }
+        return total - sum;
+    }
+}
+```
+
+## Find all the Dupplicates numbers form the Array
+**Input: nums = [4,3,2,7,8,2,3,1]
+Output: [2,3]**
+```
+class Solution {
+    public List<Integer> findDuplicates(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int num : nums){
+            if(set.contains(num)){
+                list.add(num);
+            }
+            else{
+                set.add(num);
+            }
+        }
+        return list;
+    }
+}
+```
+## Find all the Disappeared Numbers from the Array
+```
+class Solution {
+    public List<Integer> findDisappearedNumbers(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int num : nums){
+            set.add(num);
+        }
+        for(int i = 1 ; i <= nums.length ; i++){
+            if(!set.contains(i)){
+                list.add(i);
+            }
+        }
+        return list;
+    }
+}
+```
+
+## first Positive Missing Number
+**Input: nums = [1,2,0]
+Output: 3
+Explanation: The numbers in the range [1,2] are all in the array.**
+```
+class Solution {
+    public int firstMissingPositive(int[] nums) {
+        HashSet<Integer> set = new HashSet<>();
+        for(int num : nums){
+            set.add(num);
+        }
+        int i = 1;
+        while(true){
+            if(!set.contains(i)){
+                return i;
+            }
+            i++;
+        }
+    }
+}
+```

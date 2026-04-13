@@ -116,3 +116,52 @@ class A{
     }
 }
 ```
+
+## Palindomic substring
+****Input:** s = "aaa"
+**Output:** 6
+**Explanation:** Six palindromic strings: "a", "a", "a", "aa", "aa", "aaa".**
+```
+class Solution {
+    int count = 0;
+    public int countSubstrings(String s) {
+       for(int i = 0 ; i < s.length(); i++){
+            makepal(s,i,i);
+            makepal(s,i,i+1);
+       }
+       return count;
+    }
+
+    public void makepal(String s , int l , int r){
+        while(l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)){
+            count++;
+            l--;
+            r++;
+        }
+    }
+}
+```
+
+
+## Longest Plaindrome Substring
+```
+class Solution {
+    String ans = "";
+    private void makepal(String s , int l , int r){
+        while(l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)){
+            if(r - l + 1 > ans.length()){
+                ans = s.substring(l,r+1);
+            }
+            l--;
+            r++;
+        }
+    }
+    public String longestPalindrome(String s) {
+        for(int i = 0 ; i < s.length() ; i++){
+            makepal(s,i,i);
+            makepal(s,i,i+1);
+        }
+        return ans;
+    }
+}
+```

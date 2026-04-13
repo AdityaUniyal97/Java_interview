@@ -79,3 +79,38 @@ class Solution {
     }
 }
 ```
+
+## Find if Path Exisits in Graph
+```
+class Solution {
+    public boolean validPath(int n, int[][] edges, int source, int destination) {
+        ArrayList<ArrayList<Integer>> adjency = new ArrayList<>();
+        for(int i = 0 ; i < n ; i++){
+            adjency.add(new ArrayList<>());
+        }
+        for(int[] e : edges){
+            int u = e[0];
+            int v = e[1];
+            adjency.get(u).add(v);
+            adjency.get(v).add(u);
+        }
+        boolean[] visited = new boolean[n];
+        Queue<Integer> queue = new LinkedList<>();
+        queue.add(source);
+        visited[source] = true;
+        while(!queue.isEmpty()){
+            int node = queue.poll();
+            if(node == destination){
+                return true;
+            }
+            for(int neighbours : adjency.get(node)){
+                if(!visited[neighbours]){
+                    visited[neighbours] = true;
+                    queue.add(neighbours);
+                }
+            }
+        }
+        return false;
+    }
+}
+```

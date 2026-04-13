@@ -210,3 +210,41 @@ class Solution {
     }
 }
 ```
+
+## Intersection between two LL
+```
+public static Node findIntersection(Node head1, Node head2) {
+        HashSet<Node> set = new HashSet<>();
+        Node curr = head1;
+        while(curr != null) {
+            set.add(curr);
+            curr = curr.next;
+        }
+        curr = head2;
+        while(curr != null) {
+            if(set.contains(curr)) {
+                return curr;  
+            }
+            curr = curr.next;
+        }
+        
+        return null; 
+    }
+```
+
+## Sort the Array based on the Parity(Even first than ODD)
+```
+public int[] sortArrayByParity(int[] nums) {
+        int left = 0;
+        for(int i = 0 ; i < nums.length ; i++){
+            if(nums[i] % 2 == 0){
+                int temp = nums[left];
+                nums[left] = nums[i];
+                nums[i] = temp;
+                left++;
+            }
+        }
+        return nums;
+    }
+    
+```
