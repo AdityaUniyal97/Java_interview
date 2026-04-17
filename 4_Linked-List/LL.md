@@ -171,23 +171,45 @@ public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
     }
 ```
 
-## Swap Nodes in a Pair
+## Merge K sorted Array
+**Input: lists = [[1,4,5],[1,3,4],[2,6]]
+Output: [1,1,2,3,4,4,5,6]
+Explanation: The linked-lists are:
+[
+  1->4->5,
+  1->3->4,
+  2->6
+]
+merging them into one sorted linked list:
+1->1->2->3->4->4->5->6**
 ```
-public ListNode swapPairs(ListNode head) {
-        ListNode dummy = new ListNode(0);
-        dummy.next = head;
-        ListNode prev = dummy;
-        while(prev.next != null && prev.next.next != null){
-            ListNode first = prev.next;
-            ListNode second = first.next;
-            //swap
-            first.next = second.next;
-            second.next = first;
-            prev.next = second;
-            
-            //move prev
-            prev = first;
+class Solution {
+    public ListNode mergeKLists(ListNode[] lists) {
+        if(lists == null || lists.length == 0) return null;
+        ListNode result = null;
+        for(ListNode list : lists){
+            result = merge(result , list);
         }
+        return result;
+    }
+    public ListNode merge(ListNode l1 , ListNode l2){
+        ListNode dummy = new ListNode(0);
+        ListNode curr = dummy;
+        while(l1 != null && l2 != null){
+            if(l1.val < l2.val){
+                curr.next = l1;
+                l1 = l1.next;
+                curr = curr.next;
+            }
+            else{
+                curr.next = l2;
+                l2 = l2.next;
+                curr = curr.next;
+            }
+        }
+        if(l1 != null) curr.next = l1;
+        if(l2 != null) curr.next = l2;
         return dummy.next;
     }
+}
 ```
