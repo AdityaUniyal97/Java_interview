@@ -259,3 +259,130 @@ class Solution {
     }
 }
 ```
+
+## Shortest Distance to a Character
+
+**Input: s = "loveleetcode", c = "e"
+Output: [3,2,1,0,1,0,0,1,2,2,1,0] Choose the target which is closer**
+```
+class Solution {
+    public int[] shortestToChar(String s, char c) {
+        int n = s.length();
+        int[] ans = new int[n];
+        int prev = -1000;
+        //check Left
+        for(int i = 0 ; i < n ; i++){
+            if(s.charAt(i) == c){
+                prev = i;
+            }
+            ans[i] = i - prev;
+        }
+
+        //Check Right
+        prev = 1000;
+        for(int i =  n ; i >= 0 ; i--){
+            if(s.charAt(i) == c){
+                prev = i;
+            }
+            ans[i] = Math.min(ans[i],prev- i);
+        }
+        return ans;
+    }
+}
+```
+
+## di String Match
+**A permutation perm of n + 1 integers of all the integers in the range [0, n] **
+
+**Input: s = "IDID"
+Output: [0,4,1,3,2]**
+*Because permuatiton says that n + 1size means (0 - 4) *
+```
+class Solution {
+    public int[] diStringMatch(String s) {
+        int n = s.length();
+        int low = 0;
+        int high = n;
+        int[] ans = new int[n + 1];
+        for(int i = 0 ; i < n ; i++){
+            if(s.charAt(i)=='I'){
+                ans[i] = low;
+                low++;
+            }
+            else{
+                ans[i] = high;
+                high--;
+            }
+        }
+        //At last both left and right become same so put any of them
+        ans[n] = high;
+        return ans;
+    }
+}
+```
+
+
+## Make string s Subsequence Using Cyclic Increment
+
+**s1 ko change karke s2 banana hai**
+**s1 = "abc"
+s2 = "ad"
+👉 a → a ✅
+👉 b → c → d ✅ (2 steps allowed)
+👉 possible → true**
+```
+class Solution {
+    public boolean canMakeSubsequence(String s1, String s2) {
+        int i = 0 , j = 0;
+        while(i < s1.length() && j < s2.length()){
+            char c1 = s1.charAt(i);
+            char c2 = s2.charAt(j);
+            if(c1 == c2){
+                i++;
+                j++;
+            }
+            // Next Character ko Nikal rahe ahi or check kar rhe hai
+            else if((c1 + 1 - 'a') % 26 + 'a' == c2){
+                i++;
+                j++;
+            }
+            else{
+                i++;
+            }
+        }
+        return j == s2.length();
+    }
+}
+```
+
+## Minimum Length of String After Deleting Similar Ends
+
+**Agar start aur end same hai, dono side se delete karte jao**
+```
+Input: s = "cabaabac"
+Output: 0
+Explanation: An optimal sequence of operations is:
+- Take prefix = "c" and suffix = "c" and remove them, s = "abaaba".
+- Take prefix = "a" and suffix = "a" and remove them, s = "baab".
+- Take prefix = "b" and suffix = "b" and remove them, s = "aa".
+- Take prefix = "a" and suffix = "a" and remove them, s = "".
+```
+Code
+```
+class Solution {
+    public int minimumLength(String s) {
+        int left = 0;
+        int right = s.length() - 1;
+        while(left < right && s.charAt(left) == s.charAt(right)){
+            char ch = s.charAt(left);
+            while(left <= right && s.charAt(left) == ch){
+                left++;
+            }
+            while(left <= right && s.charAt(right) == ch){
+                right--;
+            }
+        }
+        return right - left + 1;
+    }
+}
+```

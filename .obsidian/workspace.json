@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_ArrayBasic/Array Basics.md",
+                "file": "1Two-Pointer/0_2 String.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Array Basics"
+              "title": "0_2 String"
             }
           },
           {
@@ -27,16 +27,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1Two-Pointer/0_2 String.md",
+                "file": "AI/Unit=05.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0_2 String"
+              "title": "Unit=05"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,12 +198,14 @@
       "bases:Create new base": false
     }
   },
-  "active": "5745c456464421fc",
+  "active": "541f6e3e32dbaf64",
   "lastOpenFiles": [
     "1Two-Pointer/0 _1 two Pointer on Array.md",
-    "1Two-Pointer/0_2 String.md",
-    "02_StringBasics.md",
     "01_ArrayBasic/Array Basics.md",
+    "AI/Unit=05.md",
+    "1Two-Pointer/0_2 String.md",
+    "AI",
+    "02_StringBasics.md",
     "Graph/1_DFS _ Connected Componenet.md",
     "01_ArrayBasic",
     "Graph/DFS.md",
@@ -227,7 +228,6 @@
     "1Two-Pointer/3_Inplace Array Modification.md",
     "1Two-Pointer/2 String_Reversal.md",
     "6_Tree/B Recursive Inorder.md",
-    "6_Tree/a_ Recursive Preorder.md",
     "System_Design",
     "Graph",
     "6_Tree",
@@ -235,7 +235,6 @@
     "5_Sliding Window",
     "DP/1D",
     "4_Linked-List",
-    "CP",
-    "DP/1_Fibonacci"
+    "CP"
   ]
 }
