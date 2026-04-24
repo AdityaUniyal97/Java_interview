@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Dbms/U5.md",
+                "file": "5_Sliding Window/1_Fixed - Sized Slding Window.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "U5"
+              "title": "1_Fixed - Sized Slding Window"
             }
           }
         ],
@@ -201,8 +201,9 @@
   },
   "active": "5745c456464421fc",
   "lastOpenFiles": [
-    "AI/Unit=05.md",
+    "5_Sliding Window/0_Sliding window.md",
     "Dbms/U5.md",
+    "AI/Unit=05.md",
     "Dbms",
     "Graph/1_BFS and DFS on Graph.md",
     "Prefix_SUm/Prefix Sum.md",
@@ -217,7 +218,6 @@
     "Graph/Graph Data Structure.md",
     "Graph/BFS.md",
     "5_Sliding Window/1_Fixed - Sized Slding Window.md",
-    "5_Sliding Window/0_Sliding window.md",
     "5_Sliding Window/2_Longest and Smallest WindowProblems.md",
     "4_Linked-List/LL.md",
     "1Two-Pointer/1_convergines.md",
