@@ -13,30 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Graph/1_BFS and DFS on Graph.md",
+                "file": "1_Two-Pointers/1_Sliding_Window.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_BFS and DFS on Graph"
-            }
-          },
-          {
-            "id": "5745c456464421fc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "5_Sliding Window/1_Fixed - Sized Slding Window.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "1_Fixed - Sized Slding Window"
+              "title": "1_Sliding_Window"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -199,43 +184,44 @@
       "bases:Create new base": false
     }
   },
-  "active": "5745c456464421fc",
+  "active": "541f6e3e32dbaf64",
   "lastOpenFiles": [
-    "5_Sliding Window/0_Sliding window.md",
-    "Dbms/U5.md",
-    "AI/Unit=05.md",
-    "Dbms",
-    "Graph/1_BFS and DFS on Graph.md",
-    "Prefix_SUm/Prefix Sum.md",
-    "1Two-Pointer/0_2 String.md",
-    "Prefix_SUm",
-    "1Two-Pointer/0 _1 two Pointer on Array.md",
-    "01_ArrayBasic/Array Basics.md",
-    "AI",
-    "02_StringBasics.md",
-    "01_ArrayBasic",
-    "Graph/DFS.md",
-    "Graph/Graph Data Structure.md",
-    "Graph/BFS.md",
-    "5_Sliding Window/1_Fixed - Sized Slding Window.md",
-    "5_Sliding Window/2_Longest and Smallest WindowProblems.md",
-    "4_Linked-List/LL.md",
-    "1Two-Pointer/1_convergines.md",
-    "3_Matrix/7_Hashing _ Frequenxy.md",
-    "3_Matrix/6_Product except itself.md",
-    "3_Matrix/4_Spiral Matrix.md",
-    "3_Matrix/3_In_Place_rotation.md",
-    "3_Matrix/2_Merge Sorted Array.md",
-    "3_Matrix/1_ Plus One.md",
-    "3_Matrix/0_Matrix.md",
-    "2_HashMaps/problems.md",
-    "1Two-Pointer/4_ Fast & Slow.md",
+    "1_Two-Pointers/0_Two_Pointer.md",
+    "1_Two-Pointers/1_Sliding_Window.md",
+    "Pasted image 20260424204005.jpg",
+    "1_Two-Pointers",
+    "0_Old/Kdanes-Algo.md",
+    "0_Old/02_StringBasics.md",
+    "0_Old/System_Design/2_Principles of System Desing.md",
+    "0_Old/System_Design/1 Introduction.md",
+    "0_Old/System_Design",
+    "0_Old/Prefix_SUm/Prefix Sum.md",
+    "0_Old/Prefix_SUm",
     "1Two-Pointer/3_Inplace Array Modification.md",
-    "System_Design",
-    "Graph",
-    "6_Tree",
-    "2_HashMaps",
-    "5_Sliding Window",
-    "DP/1D"
+    "0_Old/2_HashMaps/problems.md",
+    "0_Old/2_HashMaps",
+    "0_Old/1Two-Pointer/4_ Fast & Slow.md",
+    "0_Old/1Two-Pointer/3_Inplace Array Modification.md",
+    "0_Old/1Two-Pointer/2 String_Reversal.md",
+    "0_Old/1Two-Pointer/0 _1 two Pointer on Array.md",
+    "0_Old/1Two-Pointer/1_convergines.md",
+    "0_Old/1Two-Pointer/0_2 String.md",
+    "0_Old/1Two-Pointer",
+    "0_Old/01_ArrayBasic/Array Basics.md",
+    "0_Old/01_ArrayBasic",
+    "0_Old/Graph/BFS.md",
+    "0_Old/Graph/1_BFS and DFS on Graph.md",
+    "0_Old/Graph",
+    "0_Old/DP/1D/1D.md",
+    "0_Old/DP/1_Fibonacci/Fibonacci.md",
+    "0_Old/DP/1_Fibonacci",
+    "0_Old/DP/1D",
+    "0_Old/DP",
+    "0_Old/Dbms/U5.md",
+    "0_Old/AI/Unit=05.md",
+    "0_Old/6_Tree/B Recursive Inorder.md",
+    "0_Old/6_Tree/a_ Recursive Preorder.md",
+    "0_Old/5_Sliding Window/1_Fixed - Sized Slding Window.md",
+    "0_Old/5_Sliding Window/0_Sliding window.md"
   ]
 }
