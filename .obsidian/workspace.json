@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1_Two-Pointers/1_Sliding_Window.md",
+                "file": "Data-Structure/1 Two Pointer/2_String Reversal.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1_Sliding_Window"
+              "title": "2_String Reversal"
             }
           }
         ]
@@ -186,8 +186,18 @@
   },
   "active": "541f6e3e32dbaf64",
   "lastOpenFiles": [
+    "Data-Structure/1 Two Pointer/1 Converging(Meet in the Middle).md",
+    "Data-Structure/1 Two Pointer/2_String Reversal.md",
+    "Data-Structure/1 Two Pointer",
     "1_Two-Pointers/0_Two_Pointer.md",
+    "Data-Structure",
     "1_Two-Pointers/1_Sliding_Window.md",
+    "DSA_C/Practical/Trees.md",
+    "Dbms/U5.md",
+    "DSA_C/Practical",
+    "DSA_C",
+    "AI/Unit=05.md",
+    "1_Two-Pointers/Pasted image 20260425195512.png",
     "Pasted image 20260424204005.jpg",
     "1_Two-Pointers",
     "0_Old/Kdanes-Algo.md",
@@ -211,17 +221,8 @@
     "0_Old/01_ArrayBasic",
     "0_Old/Graph/BFS.md",
     "0_Old/Graph/1_BFS and DFS on Graph.md",
-    "0_Old/Graph",
     "0_Old/DP/1D/1D.md",
     "0_Old/DP/1_Fibonacci/Fibonacci.md",
-    "0_Old/DP/1_Fibonacci",
-    "0_Old/DP/1D",
-    "0_Old/DP",
-    "0_Old/Dbms/U5.md",
-    "0_Old/AI/Unit=05.md",
-    "0_Old/6_Tree/B Recursive Inorder.md",
-    "0_Old/6_Tree/a_ Recursive Preorder.md",
-    "0_Old/5_Sliding Window/1_Fixed - Sized Slding Window.md",
-    "0_Old/5_Sliding Window/0_Sliding window.md"
+    "0_Old/6_Tree/B Recursive Inorder.md"
   ]
 }

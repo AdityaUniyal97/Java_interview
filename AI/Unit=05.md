@@ -5,13 +5,10 @@
 ## 1. Neuron & Biological Inspiration
 
 Hamare brain mein billions ki tadaad mein **neurons** hote hain jo milkar kaam karte hain aur hume sochne, samajhne aur seekhne ki taqat dete hain.
-
 Ek biological neuron ke 3 main parts hote hain:
-
 - **Dendrites** — doosre neurons se signals receive karte hain
 - **Cell Body** — un signals ko process karta hai
 - **Axon** — processed signal ko aage bhejta hai
-
 Isi biological structure se inspired hokar scientists ne **Artificial Neural Network (ANN)** banaya — jisme artificial neurons usi tarah kaam karte hain jaise brain ke neurons karte hain.
 
 ---
@@ -44,7 +41,7 @@ Perceptron ko **Frank Rosenblatt** ne 1958 mein introduce kiya. Yeh McCulloch-Pi
 ## 4. Architecture of ANN
 
 Ek ANN teen tarah ki layers se milkar banta hai:
-
+![[Pasted image 20260425195512.png|300]]
 **Input Layer** — Yahan bahar se data enter karta hai. Jitne features hain utne neurons hote hain is layer mein.
 
 **Hidden Layer** — Yeh network ka "brain" hota hai. Yahan actual learning aur pattern recognition hoti hai. Ek ya zyada hidden layers ho sakti hain.
@@ -123,14 +120,14 @@ Dono networks ek doosre ko improve karte rehte hain. Generator itna achha fake d
 
 ## 📋 Quick Revision
 
-|Topic|Key Point|
-|---|---|
-|Biological Neuron|Brain se inspiration — dendrite, cell body, axon|
-|McCulloch-Pitts|Pehla binary neuron model, weights manually set|
-|Perceptron|Self-learning, binary classification, linear boundary|
-|ANN Architecture|Input → Hidden → Output layers|
-|Multi-Layer ANN|Complex patterns seekhne ke liye deep networks|
-|Backpropagation|Error peeche propagate, weights update karna|
-|RNN|Sequential data, memory hoti hai, vanishing gradient problem|
-|LSTM|RNN + 3 gates, long term memory|
-|GAN|Generator vs Discriminator, realistic fake data|
+| Topic             | Key Point                                                    |
+| ----------------- | ------------------------------------------------------------ |
+| Biological Neuron | Brain se inspiration — dendrite, cell body, axon             |
+| McCulloch-Pitts   | Pehla binary neuron model, weights manually set              |
+| Perceptron        | Self-learning, binary classification, linear boundary        |
+| ANN Architecture  | Input → Hidden → Output layers                               |
+| Multi-Layer ANN   | Complex patterns seekhne ke liye deep networks               |
+| Backpropagation   | Error peeche propagate, weights update karna                 |
+| RNN               | Sequential data, memory hoti hai, vanishing gradient problem |
+| LSTM              | RNN + 3 gates, long term memory                              |
+| GAN               | Generator vs Discriminator, realistic fake data              |
